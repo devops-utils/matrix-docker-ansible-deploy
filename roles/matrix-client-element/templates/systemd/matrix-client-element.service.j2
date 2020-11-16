@@ -18,7 +18,7 @@ ExecStart={{ matrix_host_command_docker }} run --rm --name matrix-client-element
 			--read-only \
 			--network={{ matrix_docker_network }} \
 			{% if matrix_client_element_container_http_host_bind_port %}
-			-p {{ matrix_client_element_container_http_host_bind_port }}:8080 \
+			-p {{ matrix_client_element_container_http_host_bind_port }}:8083 \
 			{% endif %}
 			--tmpfs=/tmp:rw,noexec,nosuid,size=10m \
 			-v {{ matrix_client_element_data_path }}/nginx.conf:/etc/nginx/nginx.conf:ro \

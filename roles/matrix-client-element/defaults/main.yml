@@ -9,7 +9,7 @@ matrix_client_element_docker_image_force_pull: "{{ matrix_client_element_docker_
 matrix_client_element_data_path: "{{ matrix_base_data_path }}/client-element"
 matrix_client_element_docker_src_files_path: "{{ matrix_client_element_data_path }}/docker-src"
 
-# Controls whether the matrix-client-element container exposes its HTTP port (tcp/8080 in the container).
+# Controls whether the matrix-client-element container exposes its HTTP port (tcp/8083 in the container).
 #
 # Takes an "<ip>:<port>" or "<port>" value (e.g. "127.0.0.1:8765"), or empty string to not expose.
 matrix_client_element_container_http_host_bind_port: ''

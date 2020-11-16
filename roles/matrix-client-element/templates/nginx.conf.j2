@@ -6,7 +6,7 @@
 # (mounting `/dev/null` over `/etc/nginx/conf.d/default.conf` works well)
 #
 # The following changes have been done compared to a default nginx configuration file:
-# - default server port is changed (80 -> 8080), so that a non-root user can bind it
+# - default server port is changed (80 -> 8083), so that a non-root user can bind it
 # - various temp paths are changed to `/tmp`, so that a non-root user can write to them
 # - the `user` directive was removed, as we don't want nginx to switch users
 
@@ -45,7 +45,7 @@ http {
 	#gzip on;
 
 	server {
-		listen 8080;
+		listen 8083;
 		server_name localhost;
 
 		root /usr/share/nginx/html;

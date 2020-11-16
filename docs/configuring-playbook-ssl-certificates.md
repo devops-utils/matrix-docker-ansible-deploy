@@ -94,4 +94,4 @@ The certificate files would be available in `/matrix/ssl/config/live/<your-other
 For automated certificate renewal to work, each port `80` vhost for each domain you are obtaining certificates for needs to forward requests for `/.well-known/acme-challenge` to the certbot container we use for renewal.
 
 See how this is configured for the `matrix.` subdomain in `/matrix/nginx-proxy/conf.d/matrix-synapse.conf`
-Don't be alarmed if the above configuraiton file says port `8080`, instead of port `80`. It's due to port mapping due to our use of containers.
+Don't be alarmed if the above configuraiton file says port `8083`, instead of port `80`. It's due to port mapping due to our use of containers.

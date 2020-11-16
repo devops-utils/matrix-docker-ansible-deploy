@@ -37,7 +37,7 @@ matrix_nginx_proxy_container_extra_arguments: []
 # - services are served directly from the HTTP vhost
 matrix_nginx_proxy_https_enabled: true
 
-# Controls whether the matrix-nginx-proxy container exposes its HTTP port (tcp/8080 in the container).
+# Controls whether the matrix-nginx-proxy container exposes its HTTP port (tcp/8083 in the container).
 #
 # Takes an "<ip>:<port>" or "<port>" value (e.g. "127.0.0.1:80"), or empty string to not expose.
 matrix_nginx_proxy_container_http_host_bind_port: '80'

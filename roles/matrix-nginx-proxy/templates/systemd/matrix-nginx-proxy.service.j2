@@ -22,7 +22,7 @@ ExecStart={{ matrix_host_command_docker }} run --rm --name matrix-nginx-proxy \
 			--tmpfs=/tmp:rw,noexec,nosuid,size={{ matrix_nginx_proxy_tmp_directory_size_mb }}m \
 			--network={{ matrix_docker_network }} \
 			{% if matrix_nginx_proxy_container_http_host_bind_port %}
-			-p {{ matrix_nginx_proxy_container_http_host_bind_port }}:8080 \
+			-p {{ matrix_nginx_proxy_container_http_host_bind_port }}:8083 \
 			{% endif %}
 			{% if matrix_nginx_proxy_https_enabled and matrix_nginx_proxy_container_https_host_bind_port %}
 			-p {{ matrix_nginx_proxy_container_https_host_bind_port }}:8443 \

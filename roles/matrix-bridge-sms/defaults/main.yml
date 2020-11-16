@@ -30,7 +30,7 @@ matrix_sms_bridge_systemd_required_services_list: ['docker.service']
 # List of systemd services that service wants
 matrix_sms_bridge_systemd_wanted_services_list: []
 
-matrix_sms_bridge_appservice_url: 'http://matrix-sms-bridge:8080'
+matrix_sms_bridge_appservice_url: 'http://matrix-sms-bridge:8083'
 matrix_sms_bridge_homeserver_hostname: 'matrix-synapse'
 matrix_sms_bridge_homeserver_port: '8008'
 

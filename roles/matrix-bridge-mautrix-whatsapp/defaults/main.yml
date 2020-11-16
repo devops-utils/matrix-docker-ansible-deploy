@@ -13,7 +13,7 @@ matrix_mautrix_whatsapp_data_path: "{{ matrix_mautrix_whatsapp_base_path }}/data
 
 matrix_mautrix_whatsapp_homeserver_address: "http://matrix-synapse:8008"
 matrix_mautrix_whatsapp_homeserver_domain: "{{ matrix_domain }}"
-matrix_mautrix_whatsapp_appservice_address: "http://matrix-mautrix-whatsapp:8080"
+matrix_mautrix_whatsapp_appservice_address: "http://matrix-mautrix-whatsapp:8083"
 
 # A list of extra arguments to pass to the container
 matrix_mautrix_whatsapp_container_extra_arguments: []

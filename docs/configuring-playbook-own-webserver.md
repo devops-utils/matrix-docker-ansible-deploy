@@ -152,8 +152,8 @@ matrix_nginx_proxy_container_extra_arguments:
   # (The 'default' certificate resolver must be defined in Traefik config)
   - '--label "traefik.http.routers.matrix-nginx-proxy.tls.certResolver=default"'
 
-  # The Nginx proxy container uses port 8080 internally
-  - '--label "traefik.http.services.matrix-nginx-proxy.loadbalancer.server.port=8080"'
+  # The Nginx proxy container uses port 8083 internally
+  - '--label "traefik.http.services.matrix-nginx-proxy.loadbalancer.server.port=8083"'
 
 matrix_synapse_container_extra_arguments:
   # May be unnecessary depending on Traefik config, but can't hurt
@@ -219,7 +219,7 @@ services:
       - "--certificatesresolvers.default.acme.storage=/letsencrypt/acme.json"
     ports:
       - "443:443"
-      - "8080:8080"
+      - "8083:8083"
     volumes:
       - "./letsencrypt:/letsencrypt"
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
