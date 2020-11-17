@@ -40,7 +40,7 @@ matrix_nginx_proxy_https_enabled: true
 # Controls whether the matrix-nginx-proxy container exposes its HTTP port (tcp/8083 in the container).
 #
 # Takes an "<ip>:<port>" or "<port>" value (e.g. "127.0.0.1:80"), or empty string to not expose.
-matrix_nginx_proxy_container_http_host_bind_port: '80'
+matrix_nginx_proxy_container_http_host_bind_port: '8083'
 
 # Controls whether the matrix-nginx-proxy container exposes its HTTPS port (tcp/8443 in the container).
 #
@@ -48,7 +48,7 @@ matrix_nginx_proxy_container_http_host_bind_port: '80'
 #
 # This only makes sense and applies if `matrix_nginx_proxy_https_enabled` is set to `true`.
 # Otherwise, there are no HTTPS vhosts to expose.
-matrix_nginx_proxy_container_https_host_bind_port: '443'
+matrix_nginx_proxy_container_https_host_bind_port: '444'
 
 # Controls whether the matrix-nginx-proxy container exposes the Matrix Federation port (tcp/8448 in the container).
 #
